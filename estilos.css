@@ -4,42 +4,32 @@
     box-sizing: border-box;
 }
 
-header{
-    height: 100px;
-    background-image: url(media/encabezado.jpg);
+.navbar{
+    background-image: url(/media/encabezado.jpg);
+    background-position: center;
     background-size: cover;
-    padding: 20px;
-    font-size: 22px;
-    
-
-}
-
-.titulo{
-    display: inline-block;
-    color: rgb(255, 0, 0);
-    font-size: 50px;
-    text-decoration:underline ;
-    font-weight: bold;
-
-}
-
-.logo img{
-    height: 75px;
-    float:left;
-    display: flex;
-    margin-right: 20px;
 }
 
 .barra{
-    float: right;
     display: flex;
+    font-size: 20px;
+}
+
+.barra ul{
+    padding-right: 20px;
 }
 
 .barra li{
+
     list-style: none;
     display: inline-block;
     margin-top: 10px;
     padding: 10px;
+    transition: 0.8s;
+}
+
+.barra li:hover{
+    transform: scale(1.2);
 }
 
 .barra a{
@@ -54,6 +44,10 @@ header{
 }
 
 /* ESTILOS PARA EL MAIN */
+
+main{
+    height: 800px;
+}
 
 hr{
     color: rgb(255, 0, 0);
@@ -266,4 +260,57 @@ footer{
 
 main .cuerpo{
     height: 750px;
+}
+
+/* ESTILOS PARA BICICLETAS */
+
+.gridbici{
+    border: 2px solid black;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "uno"
+                         "dos"
+                         "tres"
+                         "cuatro"
+                         "cinco"
+                         "seis";
+    
+    background-color: red;
+}
+
+.bici{
+    border: 2px black solid;
+    border-radius: 5px;
+    grid-gap: 5px;
+}
+
+.card{
+    height: 100%;
+}
+
+.biciuno{
+    grid-area: uno;
+    
+}
+
+.bicidos{
+    grid-area: dos;
+}
+
+.bicitres{
+    grid-area: tres;
+}
+
+.bicicuatro{
+    grid-area: cuatro;
+}
+
+.bicicinco{
+    grid-area: cinco;
+}
+
+.biciseis{
+    grid-area: seis;
 }
