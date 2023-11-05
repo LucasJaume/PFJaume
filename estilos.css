@@ -6,11 +6,9 @@
 
 
 
-.navbar{
-    background-image: url(media/encabezado.jpg);
-    background-position: center;
-    background-size: cover;
-}
+/* .navbar{
+    
+    } */
 
 .barra{
     display: flex;
@@ -52,7 +50,7 @@
 h1{
     background-color: white;
     font-family:fantasy;
-    
+    border-bottom: 2px black solid;
 }
 
 /* ESTILOS PARA EL MAIN */
