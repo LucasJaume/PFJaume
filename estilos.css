@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@300&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+main{
+    padding: 0 15px;
+}
 
 
-/* .navbar{
-    
-    } */
+.navbar{
+    font-family: 'Roboto Slab', serif;
+    } 
 
 .barra{
     display: flex;
@@ -40,6 +48,7 @@
 .barra a:hover{
     color: rgb(255, 255, 255);
     background-color: rgb(255, 0, 0);
+    border-radius: 10px;
     text-decoration: underline;
 }
 
@@ -317,8 +326,8 @@ main .cuerpo{
 
 /* ESTILOS PARA ACCESORIOS */
 
-.gridAccesorios{
 
+.gridAccesorios{
     border: 2px solid rgb(0, 0, 0);
     height: auto;
     display: grid;
@@ -337,12 +346,20 @@ main .cuerpo{
 
 .accesorio{
     /* border: 2px black solid; */
+    margin: 0 5px;
     border-radius: 5px;
     grid-gap: 5px;
 }
 
-.card{
+.btnCard{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
     height: 100%;
+    font-family: 'Inter', sans-serif;
 }
 
 .acceUno{
@@ -371,9 +388,21 @@ main .cuerpo{
 }
 
 
+
 /* ESTILOS PARA NOSOTROS.HTML */
 
 .cuerpo{
     align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
+
+.cuerpo form {
+    max-width: 400px; 
+    margin: 0 auto; display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
