@@ -17,21 +17,26 @@
   <header>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="../media/Zonabike.jpg" alt="ZonaBike" style="width:70px;" class="rounded-pill">
-        </a>
-        <nav class="barra">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="bicicletas.html">Bicicletas</a></li>
-            <li><a href="accesorios.html">Accesorios</a></li>
-            <li><a href="marcas.html">Marcas</a></li>
-            <li><a href="#">Nosotros</a></li>
-          </ul>
-        </nav>
+        <a class="navbar-brand" href="#"><img src="../media/Zonabike.jpg" alt="ZonaBike" style="width:70px;"
+            class="rounded-pill"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div class="barra">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="bicicletas.html">Bicicletas</a></li>
+              <li class="nav-item"><a class="nav-link" href="accesorios.html">Accesorios</a></li>
+              <li class="nav-item"><a class="nav-link" href="marcas.html">Marcas</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
+
   <main>
     <div class="titulo">
       <h1>Zonabike</h1>
@@ -43,17 +48,17 @@
       <form action="">
         <h2>Aqui te pondras en contacto con nosotros!</h2>
         <label for=" casilla nombre">Nombre</label>
-        <input type="text" id="name" name="Nombre" placeholder="Escribe tu nombre"/>
+        <input type="text" id="name" name="Nombre" placeholder="Escribe tu nombre" />
 
         <label for="casilla apellido">Apellido</label>
         <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido" />
 
-        <label for="casilla comentario">Dejanos tu problema</label> 
+        <label for="casilla comentario">Dejanos tu problema</label>
         <textarea name="comentario" id="comentario" cols="30" rows="10"
           placeholder="Escribe tu problema aqui"></textarea>
-      
 
-        <input type="submit" value="Enviar" /> 
+
+        <input type="submit" value="Enviar" />
       </form>
     </div>
   </main>
