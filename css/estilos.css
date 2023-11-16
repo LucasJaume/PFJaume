@@ -83,111 +83,46 @@ footer .iconos a p {
 
 .titulo {
   text-align: center;
-  background-color: white;
-  border-bottom: 2px black solid;
-  font-family: "Poppins", sans-serif;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px rgb(0, 0, 0) solid;
+  font-family: Poppins;
 }
 .titulo h1 {
   font-size: 50px;
 }
 
-/* ESTILOS PARA EL MAIN */
 main {
-  height: auto;
-  padding: 0 15px;
+  padding: 15px;
 }
 
-hr {
-  color: rgb(255, 0, 0);
+/* ESTILOS PARA EL INDEX.HTML */
+marquee {
+  font-family: Poppins;
+  border-bottom: solid 3px rgb(0, 0, 0);
+  padding: 5px;
 }
 
-.bloqueUno {
-  height: 500px;
-  width: auto;
-  /* background-color: blue; */
+.mainHome {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   justify-content: center;
+  font-family: Poppins;
 }
-
-.imgNacional {
-  margin: 100px;
+.mainHome .bloque {
+  border: 1px solid rgb(255, 0, 0);
+  box-shadow: 0px 0px 5px rgba(49, 32, 32, 0.665);
+  margin: 5px 5px 0 5px;
+  background-color: rgb(255, 255, 255);
 }
-
-.texto {
-  display: inline-block;
-  margin-top: 100px;
+.mainHome .bloque img {
+  height: 300px;
+  width: 300px;
+  padding: 5px;
 }
-
-.bloqueUno h2 {
-  text-decoration: underline;
-  margin: 20px;
-  margin-bottom: 80px;
-  font-size: 35px;
-}
-
-.bloqueUno p {
-  font-size: 22px;
-}
-
-.botonVer {
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
-  width: 150px;
-  height: 40px;
-  margin-top: 375px;
-  margin-top: -375px;
-}
-
-.bloqueDos {
-  /* background-color: burlywood; */
-  height: 500px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.imgDos {
-  margin: 100px;
-}
-
-.textoDos {
-  display: inline-block;
-  margin-top: 100px;
-}
-
-.bloqueDos h2 {
-  text-decoration: underline;
-  margin: 20px;
-  margin-bottom: 80px;
-  font-size: 35px;
-}
-
-.bloqueDos p {
-  font-size: 22px;
-}
-
-.botonVer {
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
-  width: 150px;
-  height: 40px;
-  margin-top: 375px;
-}
-
-.rectangulo {
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.cuadradoUno {
-  padding-right: 70px;
-}
-
-.rectangulo i {
-  padding-left: 150px;
+.mainHome .bloque p {
+  margin: 10px;
 }
 
 /* Estilos para Bicicletas.html */

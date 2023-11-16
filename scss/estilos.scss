@@ -1,11 +1,4 @@
 @import '../scss/componentes/footer';
-
-@import url('https://fonts.googleapis.com/css2? family= Inter:wght@500 & family= Poppins:ital,wght@1,700 & family= Roboto+Slab:wght@300 & display= intercambio');
-
-// font-family: 'Inter', sans-serif;
-// font-family: 'Poppins', sans-serif;
-// font-family: 'Roboto Slab', serif;
-
 @import '../scss/base/colores';
 
 *{
@@ -21,117 +14,48 @@
 
 .titulo{
     text-align: center;
-    background-color: white;
-    border-bottom: 2px black solid;
-    font-family: 'Poppins', sans-serif;
+    background-color: $blanco;
+    border-bottom: 2px $negro solid;
+    font-family: $fuente;
         h1{
             font-size: 50px;
     }
 }
 
-/* ESTILOS PARA EL MAIN */
-
 main{
-    height: auto;
-    padding: 0 15px;
+    padding: 15px;
 }
 
-hr{
-    color: $colorprinc;
+/* ESTILOS PARA EL INDEX.HTML */
+marquee{
+    font-family: $fuente;
+    border-bottom: solid 3px $negro;
+    padding: 5px;
 }
 
-.bloqueUno{
-    height: 500px;
-    width: auto;
-    /* background-color: blue; */
+.mainHome {
     display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
     justify-content: center;
-}
-
-.imgNacional{
-    
-    margin: 100px;
-}
-
-.texto{
-    display: inline-block;
-    margin-top: 100px;
-    
-}
-
-
-.bloqueUno h2{
-    text-decoration: underline;
-    margin: 20px;
-    margin-bottom: 80px;
-    font-size: 35px;
-}
-
-.bloqueUno p{
-    font-size: 22px;
-}
-
-.botonVer{
-    background-color: $colorprinc;
-    color: rgb(255, 255, 255);
-    width: 150px;
-    height: 40px;
-    margin-top: 375px;
-    margin-top: -375px;
-}
-
-.bloqueDos{
-    /* background-color: burlywood; */
-    height: 500px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.imgDos{
-    margin: 100px;
-}
-
-.textoDos{
-    display: inline-block;
-    margin-top: 100px;
-}
-
-.bloqueDos h2{
-    text-decoration: underline;
-    margin: 20px;
-    margin-bottom: 80px;
-    font-size: 35px;
-}
-
-.bloqueDos p{
-    font-size: 22px;
-}
-
-.botonVer{
-    background-color: $colorprinc;
-    color: rgb(255, 255, 255);
-    width: 150px;
-    height: 40px;
-    margin-top: 375px;
-}
-
-.rectangulo{
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.cuadradoUno{
-    padding-right: 70px;
-}
-
-.rectangulo i{
-    padding-left: 150px;
-
-}
-
+    font-family: $fuente;
+        .bloque{
+            border: 1px solid $colorprinc;
+            box-shadow: 0px 0px 5px rgba(49, 32, 32, 0.665);
+            margin: 5px 5px 0 5px;
+            background-color: $blanco;
+            // max-width: 400px;
+                img{
+                    height: 300px;
+                    width: 300px;
+                    padding: 5px;
+                }
+                    p{
+                        margin: 10px;
+                    }
+        }
+    }
 
 
 /* Estilos para Bicicletas.html */
@@ -175,7 +99,7 @@ hr{
 
 .textoyboton button{
     background-color: $colorprinc;
-    color: rgb(255, 255, 255);
+    color: $blanco;
     width: 100%;
     height: 40px;
     margin-top: 146px;
@@ -202,7 +126,7 @@ hr{
 
 .textoyboton2 button{
     background-color: $colorprinc;
-    color: rgb(255, 255, 255);
+    color: $blanco;
     width: 100%;
     height: 40px;
     margin-top: 172px;
@@ -215,7 +139,7 @@ main .cuerpo{
 /* ESTILOS PARA BICICLETAS */
 
 .gridBici {
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid $negro;
     height: auto;
     display: grid;
     grid-template-rows: auto;
@@ -268,7 +192,7 @@ main .cuerpo{
 
 
 .gridAccesorios{
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid $negro;
     height: auto;
     display: grid;
     row-gap: 10px;
