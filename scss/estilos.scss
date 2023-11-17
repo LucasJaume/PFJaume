@@ -58,12 +58,13 @@ marquee{
     }
 
 
-/* Estilos para Bicicletas.html */
-.bicicletas{
-    height: 800px;
-    border: 3px dotted $colorprinc;
-    background-color: rgba(132, 79, 79, 0.5)
-}
+    @media screen and (min-width: 447px) {
+        .bloque {
+          max-width: 450px;
+          width: 100%;
+        }
+      }
+
 
 
 /* ESTILOS PARA MARCAS.HTML */
@@ -136,83 +137,68 @@ main .cuerpo{
     height: 750px;
 }
 
-/* ESTILOS PARA BICICLETAS */
-
+/* Estilos para Bicicletas.html */
 .gridBici {
     border: 2px solid $negro;
-    height: auto;
+    height: 100%;
+    padding: 10px;
     display: grid;
     grid-template-rows: auto;
-    grid-template-areas: "uno"
-                         "dos"
-                         "tres"
-                         "cuatro"
-                         "cinco"
-                         "seis";
+    grid-template-areas: "1"
+                         "2"
+                         "3"
+                         "4"
+                         "5"
+                         "6";
     background-color: $colorprinc;
-}
+    .bici{
+        border-radius: 5px;
 
-.bici{
-    /* border: 2px black solid; */
-    border-radius: 5px;
+    @for $i from 1 through 6{
+        .bici#{$i} {
+            grid-area: #{$i};
+        }
+    }
     
-}
-
-.card{
-    height: 100%;
-    
-}
-
-.biciuno{
-    grid-area: uno;
-    
-}
-
-.bicidos{
-    grid-area: dos;
-}
-
-.bicitres{
-    grid-area: tres;
-}
-
-.bicicuatro{
-    grid-area: cuatro;
-}
-
-.bicicinco{
-    grid-area: cinco;
-}
-
-.biciseis{
-    grid-area: seis;
+        .card{
+            height: 100%;
+            
+        }    
+    }
 }
 
 /* ESTILOS PARA ACCESORIOS */
-
+h3{
+    text-align: center;
+}
 
 .gridAccesorios{
     border: 2px solid $negro;
     height: auto;
     display: grid;
+    padding: 10px;
     row-gap: 10px;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: auto;
-    grid-template-areas: "uno"
-                         "dos"
-                         "tres"
-                         "cuatro"
-                         "cinco"
-                         "seis";
-    
+    grid-template-areas: "1"
+                         "2"
+                         "3"
+                         "4"
+                         "5"
+                         "6";
     background-color: $colorprinc;
-}
+    .accesorio{
 
-.accesorio{
+        margin: 0 5px;
+        border-radius: 5px;
+        grid-gap: 5px;
 
-    margin: 0 5px;
-    border-radius: 5px;
-    grid-gap: 5px;
+    @for $i from 1 through 6{
+            .acce#{$i} {
+                grid-area: #{$i};
+            }
+        }
+    }
 }
 
 .btnCard{
@@ -222,44 +208,46 @@ main .cuerpo{
     border-radius: 10px;
 }
 
-.acceUno{
-    grid-area: uno;
-    
-}
 
-.acceDos{
-    grid-area: dos;
-}
-
-.acceTres{
-    grid-area: tres;
-}
-
-.acceCuatro{
-    grid-area: cuatro;
-}
-
-.acceCinco{
-    grid-area: cinco;
-}
-
-.acceSeis{
-    grid-area: seis;
-}
 
 /* ESTILOS PARA NOSOTROS.HTML */
-
-.cuerpo{
-    align-items: center;
+h2 {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    color: #333;
 }
 
-.cuerpo form {
-    max-width: 400px; 
-    margin: 0 auto; display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+.cuerpo{
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label{
+            margin-top: 10px;
+            font-weight: bold;
+            color:#555;
+        }
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .enviar{
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            &:hover{
+                background-color: #45a049;
+            }
+        }
+    }
+}

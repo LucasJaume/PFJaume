@@ -125,13 +125,12 @@ marquee {
   margin: 10px;
 }
 
-/* Estilos para Bicicletas.html */
-.bicicletas {
-  height: 800px;
-  border: 3px dotted rgb(255, 0, 0);
-  background-color: rgba(132, 79, 79, 0.5);
+@media screen and (min-width: 447px) {
+  .bloque {
+    max-width: 450px;
+    width: 100%;
+  }
 }
-
 /* ESTILOS PARA MARCAS.HTML */
 .marca {
   display: flex;
@@ -197,65 +196,79 @@ main .cuerpo {
   height: 750px;
 }
 
-/* ESTILOS PARA BICICLETAS */
+/* Estilos para Bicicletas.html */
 .gridBici {
   border: 2px solid rgb(0, 0, 0);
-  height: auto;
+  height: 100%;
+  padding: 10px;
   display: grid;
   grid-template-rows: auto;
-  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
+  grid-template-areas: "1" "2" "3" "4" "5" "6";
   background-color: rgb(255, 0, 0);
 }
-
-.bici {
-  /* border: 2px black solid; */
+.gridBici .bici {
   border-radius: 5px;
 }
-
-.card {
+.gridBici .bici .bici1 {
+  grid-area: 1;
+}
+.gridBici .bici .bici2 {
+  grid-area: 2;
+}
+.gridBici .bici .bici3 {
+  grid-area: 3;
+}
+.gridBici .bici .bici4 {
+  grid-area: 4;
+}
+.gridBici .bici .bici5 {
+  grid-area: 5;
+}
+.gridBici .bici .bici6 {
+  grid-area: 6;
+}
+.gridBici .bici .card {
   height: 100%;
 }
 
-.biciuno {
-  grid-area: uno;
-}
-
-.bicidos {
-  grid-area: dos;
-}
-
-.bicitres {
-  grid-area: tres;
-}
-
-.bicicuatro {
-  grid-area: cuatro;
-}
-
-.bicicinco {
-  grid-area: cinco;
-}
-
-.biciseis {
-  grid-area: seis;
-}
-
 /* ESTILOS PARA ACCESORIOS */
+h3 {
+  text-align: center;
+}
+
 .gridAccesorios {
   border: 2px solid rgb(0, 0, 0);
   height: auto;
   display: grid;
+  padding: 10px;
   row-gap: 10px;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
+  grid-template-areas: "1" "2" "3" "4" "5" "6";
   background-color: rgb(255, 0, 0);
 }
-
-.accesorio {
+.gridAccesorios .accesorio {
   margin: 0 5px;
   border-radius: 5px;
   grid-gap: 5px;
+}
+.gridAccesorios .accesorio .acce1 {
+  grid-area: 1;
+}
+.gridAccesorios .accesorio .acce2 {
+  grid-area: 2;
+}
+.gridAccesorios .accesorio .acce3 {
+  grid-area: 3;
+}
+.gridAccesorios .accesorio .acce4 {
+  grid-area: 4;
+}
+.gridAccesorios .accesorio .acce5 {
+  grid-area: 5;
+}
+.gridAccesorios .accesorio .acce6 {
+  grid-area: 6;
 }
 
 .btnCard {
@@ -265,44 +278,46 @@ main .cuerpo {
   border-radius: 10px;
 }
 
-.acceUno {
-  grid-area: uno;
-}
-
-.acceDos {
-  grid-area: dos;
-}
-
-.acceTres {
-  grid-area: tres;
-}
-
-.acceCuatro {
-  grid-area: cuatro;
-}
-
-.acceCinco {
-  grid-area: cinco;
-}
-
-.acceSeis {
-  grid-area: seis;
-}
-
 /* ESTILOS PARA NOSOTROS.HTML */
-.cuerpo {
-  align-items: center;
+h2 {
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  color: #333;
 }
 
+.cuerpo {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .cuerpo form {
-  max-width: 400px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.cuerpo form label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+.cuerpo form input, .cuerpo form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.cuerpo form .enviar {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cuerpo form .enviar:hover {
+  background-color: #45a049;
 }
 
 /*# sourceMappingURL=estilos.css.map */
