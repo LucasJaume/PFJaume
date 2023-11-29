@@ -183,6 +183,9 @@ h3 {
 .gridAccesorios .accesorio .acce6 {
   grid-area: 6;
 }
+.gridAccesorios .card-img-top {
+  max-height: 500px;
+}
 
 .btnCard {
   padding: 10px 20px;
