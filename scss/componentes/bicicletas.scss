@@ -1,0 +1,29 @@
+/* Estilos para Bicicletas.html */
+.gridBici {
+    border: 2px solid $negro;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "1"
+                         "2"
+                         "3"
+                         "4"
+                         "5"
+                         "6";
+    background-color: $colorprinc;
+    .bici{
+        border-radius: 5px;
+
+    @for $i from 1 through 6{
+        .bici#{$i} {
+            grid-area: #{$i};
+        }
+    }
+    
+        .card{
+            height: 100%;
+            
+        }    
+    }
+}

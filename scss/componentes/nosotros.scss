@@ -1,0 +1,41 @@
+/* ESTILOS PARA NOSOTROS.HTML */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.cuerpo{
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label{
+            margin-top: 10px;
+            font-weight: bold;
+            color:#555;
+        }
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .enviar{
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            &:hover{
+                background-color: #45a049;
+            }
+        }
+    }
+}

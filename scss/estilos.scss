@@ -1,16 +1,31 @@
-@import '../scss/componentes/footer';
+/*COLORES CON VARIABLES*/
 @import '../scss/base/colores';
 
+/* ESTILOS PARA EL HEADER*/
+@import '../scss/componentes/header';
+
+/* ESTILOS PARA EL FOOOTER */
+@import '../scss/componentes/footer';                                  
+
+/* ESTILOS PARA INDEX.HTML */
+@import '../scss/componentes/index';
+
+/* ESTILOS PARA MARCAS.HTML */
+@import '../scss/componentes/marcas';
+
+/* ESTILOS PARA BICICLETAS.HTML */
+@import '../scss/componentes/bicicletas';
+
+/* ESTILOS PARA ACCESORIOS */
+@import '../scss/componentes/accesorios';
+
+/* ESTILOS PARA NOSOTROS.HTML */
+@import '../scss/componentes/nosotros';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-// ESTILOS PARA EL HEADER
-@import '../scss/componentes/header';
-/* ESTILOS PARA EL FOOOTER */
-@import '../scss/componentes/footer';                                  
 
 .titulo{
     text-align: center;
@@ -26,175 +41,4 @@ main{
     padding: 15px;
 }
 
-/* ESTILOS PARA EL INDEX.HTML */
-marquee{
-    font-family: $fuente;
-    border-bottom: solid 3px $negro;
-    padding: 5px;
-}
-
-.mainHome {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center; 
-    justify-content: center;
-    font-family: $fuente;
-        .bloque{
-            border: 1px solid $colorprinc;
-            box-shadow: 0px 0px 5px rgba(49, 32, 32, 0.665);
-            margin: 5px 5px 0 5px;
-            background-color: $blanco;
-            // max-width: 400px;
-                img{
-                    height: 300px;
-                    width: 300px;
-                    padding: 5px;
-                }
-                    p{
-                        margin: 10px;
-                    }
-        }
-    }
-
-
-    @media screen and (min-width: 447px) {
-        .bloque {
-          max-width: 450px;
-          width: 100%;
-        }
-      }
-
-
-
-
-/* ESTILOS PARA MARCAS.HTML */
-.marca {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  
-    img {
-      max-width: 100%; 
-    }
-    p{
-        max-width: 400px;
-    }
-}
-
-
-
-/* Estilos para Bicicletas.html */
-.gridBici {
-    border: 2px solid $negro;
-    height: 100%;
-    padding: 10px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-areas: "1"
-                         "2"
-                         "3"
-                         "4"
-                         "5"
-                         "6";
-    background-color: $colorprinc;
-    .bici{
-        border-radius: 5px;
-
-    @for $i from 1 through 6{
-        .bici#{$i} {
-            grid-area: #{$i};
-        }
-    }
-    
-        .card{
-            height: 100%;
-            
-        }    
-    }
-}
-
-/* ESTILOS PARA ACCESORIOS */
-h3{
-    text-align: center;
-}
-
-.gridAccesorios{
-    border: 2px solid $negro;
-    height: auto;
-    display: grid;
-    padding: 10px;
-    row-gap: 10px;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "1"
-                         "2"
-                         "3"
-                         "4"
-                         "5"
-                         "6";
-    background-color: $colorprinc;
-    .accesorio{
-
-        margin: 0 5px;
-        border-radius: 5px;
-        grid-gap: 5px;
-
-    @for $i from 1 through 6{
-            .acce#{$i} {
-                grid-area: #{$i};
-            }
-        }
-    }
-}
-
-.btnCard{
-    padding: 10px 20px;
-    background-color: $colorprinc;
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-/* ESTILOS PARA NOSOTROS.HTML */
-h2 {
-    text-align: center;
-    color: #333;
-}
-
-.cuerpo{
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        label{
-            margin-top: 10px;
-            font-weight: bold;
-            color:#555;
-        }
-        input, textarea{
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .enviar{
-            background-color: #4caf50;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            &:hover{
-                background-color: #45a049;
-            }
-        }
-    }
-}
+ 

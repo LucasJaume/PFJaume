@@ -1,32 +1,6 @@
+/*COLORES CON VARIABLES*/
 @import url("https://fonts.googleapis.com/css2? family= Inter:wght@500 & family= Poppins:ital,wght@1,700 & family= Roboto+Slab:wght@300 & display= intercambio");
-footer {
-  height: 100px;
-  background-image: url(../../media/footer.jpg);
-  background-size: cover;
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
-}
-footer .iconos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-footer .iconos a {
-  color: rgb(0, 0, 0);
-  margin-right: 20px;
-}
-footer .iconos a p {
-  display: inline-block;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ESTILOS PARA EL HEADER*/
 .navbar {
   font-family: "Roboto Slab", serif;
   align-items: center;
@@ -81,20 +55,7 @@ footer .iconos a p {
   display: inline-block;
 }
 
-.titulo {
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 2px rgb(0, 0, 0) solid;
-  font-family: Poppins;
-}
-.titulo h1 {
-  font-size: 50px;
-}
-
-main {
-  padding: 15px;
-}
-
+/* ESTILOS PARA INDEX.HTML */
 /* ESTILOS PARA EL INDEX.HTML */
 marquee {
   font-family: Poppins;
@@ -132,6 +93,7 @@ marquee {
   }
 }
 /* ESTILOS PARA MARCAS.HTML */
+/* ESTILOS PARA MARCAS.HTML */
 .marca {
   display: flex;
   flex-direction: column;
@@ -145,6 +107,7 @@ marquee {
   max-width: 400px;
 }
 
+/* ESTILOS PARA BICICLETAS.HTML */
 /* Estilos para Bicicletas.html */
 .gridBici {
   border: 2px solid rgb(0, 0, 0);
@@ -180,6 +143,7 @@ marquee {
   height: 100%;
 }
 
+/* ESTILOS PARA ACCESORIOS */
 /* ESTILOS PARA ACCESORIOS */
 h3 {
   text-align: center;
@@ -229,6 +193,7 @@ h3 {
 }
 
 /* ESTILOS PARA NOSOTROS.HTML */
+/* ESTILOS PARA NOSOTROS.HTML */
 h2 {
   text-align: center;
   color: #333;
@@ -268,6 +233,26 @@ h2 {
 }
 .cuerpo form .enviar:hover {
   background-color: #45a049;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px rgb(0, 0, 0) solid;
+  font-family: Poppins;
+}
+.titulo h1 {
+  font-size: 50px;
+}
+
+main {
+  padding: 15px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

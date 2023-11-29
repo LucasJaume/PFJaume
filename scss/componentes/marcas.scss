@@ -1,0 +1,14 @@
+/* ESTILOS PARA MARCAS.HTML */
+.marca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+    img {
+      max-width: 100%; 
+    }
+    p{
+        max-width: 400px;
+    }
+}
