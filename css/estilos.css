@@ -71,18 +71,29 @@ marquee {
   justify-content: center;
   font-family: Poppins;
 }
-.mainHome .bloque {
+.mainHome .imagenfondo {
+  background-image: url(../../media/marca/ciclista.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  margin: 10px 0px;
+}
+.mainHome .imagenfondo .bloques {
+  display: flex;
+}
+.mainHome .imagenfondo .bloques .bloque {
   border: 1px solid rgb(255, 0, 0);
   box-shadow: 0px 0px 5px rgba(49, 32, 32, 0.665);
   margin: 5px 5px 0 5px;
   background-color: rgb(255, 255, 255);
 }
-.mainHome .bloque img {
+.mainHome .imagenfondo .bloques .bloque img {
   height: 300px;
   width: 300px;
   padding: 5px;
 }
-.mainHome .bloque p {
+.mainHome .imagenfondo .bloques .bloque p {
   margin: 10px;
 }
 
@@ -94,19 +105,35 @@ marquee {
 }
 /* ESTILOS PARA MARCAS.HTML */
 /* ESTILOS PARA MARCAS.HTML */
-.marca {
+.marcas {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.marca img {
+.marcas .marca {
+  justify-content: space-between;
+  max-width: 350px;
+  height: 500px;
+  padding: 15px;
+  margin: 15px;
+}
+.marcas .marca img {
   max-width: 100%;
 }
-.marca p {
+.marcas .marca p {
   max-width: 400px;
 }
 
+.mainMarca {
+  height: 1400px;
+}
+
+@media screen and (min-width: 1170px) {
+  .mainMarca {
+    height: 1000px;
+  }
+}
 /* ESTILOS PARA BICICLETAS.HTML */
 /* Estilos para Bicicletas.html */
 .gridBici {
