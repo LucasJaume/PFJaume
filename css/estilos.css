@@ -72,7 +72,7 @@ marquee {
   font-family: Poppins;
 }
 .mainHome .imagenfondo {
-  background-image: url(../../media/marca/ciclista.jpg);
+  background-image: url(../media/marca/ciclista.jpg);
   background-size: cover;
   background-position: center;
   height: 700px;
